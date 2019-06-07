@@ -1,2 +1,2 @@
-# lexcauc-ui
-The UI frontend for the LexCauc database
+# lexcauc.github.io
+The LexCauc website
