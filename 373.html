@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -23,16 +22,16 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.3/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="site_libs/leaflet-binding-2.0.2/leaflet.js"></script>
-<script src="site_libs/leaflet-providers-1.1.17/leaflet-providers.js"></script>
-<script src="site_libs/leaflet-providers-plugin-2.0.2/leaflet-providers-plugin.js"></script>
+<script src="site_libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -79,6 +78,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -242,6 +242,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -339,7 +340,7 @@ $(document).ready(function () {
 <div id="map" class="section level3">
 <h3>Map</h3>
 <div id="htmlwidget-244aaddf2639520a3f5a" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-244aaddf2639520a3f5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[42.55,41.998055,42.731667],[46.75,47.573334,46.318611],5.5,null,["Avar","Dargwa","Andic"],{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.5,"fill":true,"fillColor":"black","fillOpacity":1},null,null,["<a href='avar.html' target = '_blank'>Avar<\/a>","<a href='itsari.html' target = '_blank'>Itsari Dargwa<\/a>","<a href='zilo.html' target = '_blank'>Zilo Andi<\/a>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[42.55,41.998055,42.731667],[46.75,47.573334,46.318611],5,null,["Avar","Dargwa","Andic"],{"interactive":true,"className":"","stroke":false,"color":["#2CA02C","#1F77B4","#FF7F0E"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#2CA02C","#1F77B4","#FF7F0E"],"fillOpacity":1},null,null,["<a href='avar.html' target = '_blank'>Avar<\/a>","<a href='itsari.html' target = '_blank'>Itsari Dargwa<\/a>","<a href='zilo.html' target = '_blank'>Zilo Andi<\/a>"],null,["б-aхъ-ине; б-игь-ине; б-oрчІ-изе / b-aqː-ine; b-ih-ine; b-orčʼ-ize / ; ; ","чивалгьанай / či-b-alh-anaj / ","мокьи танни /  / "],{"interactive":false,"permanent":true,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#1F77B4","#FF7F0E","#2CA02C"],"labels":["Dargwa","Andic","Avar"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[41.998055,42.731667],"lng":[46.318611,47.573334]}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-244aaddf2639520a3f5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"calls":[{"method":"addTiles","args":["OpenStreetMap.Mapnik",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OpenStreetMap.Mapnik",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[41.998055,42.731667,42.55],[47.573334,46.318611,46.75],5.5,null,["Dargwa","Andic","Avar"],{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.5,"fill":true,"fillColor":"black","fillOpacity":1},null,null,["<a href='itsari.html' target = '_blank'>Itsari Dargwa<\/a>","<a href='zilo.html' target = '_blank'>Zilo Andi<\/a>","<a href='avar.html' target = '_blank'>Avar<\/a>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[41.998055,42.731667,42.55],[47.573334,46.318611,46.75],5,null,["Dargwa","Andic","Avar"],{"interactive":true,"className":"","stroke":false,"color":["#1F77B4","#FF7F0E","#2CA02C"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#1F77B4","#FF7F0E","#2CA02C"],"fillOpacity":1},null,null,["<a href='itsari.html' target = '_blank'>Itsari Dargwa<\/a>","<a href='zilo.html' target = '_blank'>Zilo Andi<\/a>","<a href='avar.html' target = '_blank'>Avar<\/a>"],null,["чивалгьанай / či-b-alh-anaj / ","мокьи танни /  / ","вoрчӀизе / b-orčʼ-ize / "],{"interactive":false,"permanent":true,"direction":"right","opacity":1,"offset":[7.5,0],"textsize":"10px","textOnly":true,"style":{"font-size":"15px","font-family":"sans-serif"},"className":"","sticky":true},null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]},{"method":"addLegend","args":[{"colors":["#1F77B4","#FF7F0E","#2CA02C"],"labels":["Dargwa","Andic","Avar"],"na_color":null,"na_label":"NA","opacity":1,"position":"topright","type":"factor","title":null,"extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[41.998055,42.731667],"lng":[46.318611,47.573334]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
